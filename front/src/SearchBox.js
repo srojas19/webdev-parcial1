@@ -30,7 +30,7 @@ class SearchBox extends Component {
   }
 }
 
-SearchBox.propTypes = {
+SearchBox.PropTypes = {
   onSearch: PropTypes.func.isrequired,
   user: PropTypes.string.isrequired
 }
