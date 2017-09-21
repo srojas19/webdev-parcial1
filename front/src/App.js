@@ -13,12 +13,6 @@ class App extends Component {
     }
   }
 
-  // componentDidMount(){
-  //   fetch('/getFollowers/srojas19')
-  //   .then((res) => res.json())
-  //   .then((data) => this.setState({followers: data.data}));
-  // }
-
   onSearch(user) {
     fetch('/getFollowers/'+user)
     .then((res) => res.json())
