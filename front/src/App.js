@@ -24,6 +24,7 @@ class App extends Component {
     .then((res) => res.json())
     .then((data) => this.setState({followers: data.data}));
     console.log(user);
+    console.log(this.state.followers);
   }
 
   render() {

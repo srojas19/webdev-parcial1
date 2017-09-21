@@ -8,7 +8,8 @@ class SearchBox extends Component {
   }
 
   onKeyPress(evt) {
-    if(evt.keyCode ==='Enter') {
+    if(evt.key ==='Enter') {
+      console.log(evt.target.value);      
       this.props.onSearch(evt.target.value);
     }
   }
