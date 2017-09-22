@@ -9,7 +9,6 @@ class SearchBox extends Component {
 
   onKeyPress(evt) {
     if(evt.key ==='Enter') {
-      console.log(evt.target.value);      
       this.props.onSearch(evt.target.value);
     }
   }
@@ -17,11 +16,13 @@ class SearchBox extends Component {
   render() {
     return (
       <div>
-        <h4>Búsqueda</h4>
+        <br/>
+        <h3>Búsqueda</h3>
+        <br/>
         <div className="input-group">
           <input type="text" id='nombre'
           ref = {(input) => this.input = input} 
-          defaultvalue = {this.props.user}
+          defaultValue = {this.props.user}
           onKeyPress = {this.onKeyPress.bind(this)} className="form-control form-control-sm" placeholder="Usuario Github" aria-label="Nombre"/>
         </div>
         <br/>

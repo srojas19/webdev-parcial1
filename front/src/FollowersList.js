@@ -8,7 +8,7 @@ class FollowersList extends Component {
 
   renderList() {
     return this.props.followers.map((f,i)=>{
-        return <Follower follower={f} key={i} />
+        return <Follower checkFollower = {this.props.checkFollower.bind()} follower={f} key={f.id} />
     });
 }
 
@@ -16,7 +16,7 @@ class FollowersList extends Component {
     return (
       <div>
         <h4>Seguidores</h4>
-        <div className="list-group">
+        <div className="row justify-content-center text-center">
           {this.renderList()}
         </div>
       </div>
