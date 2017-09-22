@@ -15,12 +15,11 @@ class FollowersList extends Component {
   render() {
     return (
       <div>
-        <h4>Seguidores</h4>
+        <h3>Lista de seguidores </h3>
         <div className="row justify-content-center text-center">
           {this.renderList()}
-        </div>
-      </div>
-      
+        </div>      
+      </div>  
     );
   }
 }
