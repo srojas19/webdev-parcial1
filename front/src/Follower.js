@@ -11,7 +11,6 @@ class Follower extends Component {
 
   render() {
     return (
-      // <a className="d-flex w-100 justify-content-between list-group-item list-group-item-action flex-column align-items-start"
       <div className='col-lg-2 col-md-3 col-sm-4 col-xs-4 mb-4 mx-2 card list-group-item-action'
         onClick = {this.onClick.bind(this)}>
         <img src={this.props.follower.avatar_url} className='img-fluid rounded-circle card-img-top mt-2' width='30%' alt=""/>

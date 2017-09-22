@@ -44,7 +44,7 @@ class App extends Component {
 
   onAction(user, i) {
     this.setState({breadcrumbs: this.state.breadcrumbs.splice(0,i+1)});
-    if(user==='Home') return this.setState({followers: []});
+    if(user==='Home') return this.setState({followers: [], actual:[], reference:[]});
     if(this.state.breadcrumbs.length === i) return; 
     fetch('/getFollowers/' + user)
     .then((res) => res.json())

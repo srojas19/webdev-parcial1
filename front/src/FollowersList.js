@@ -15,7 +15,7 @@ class FollowersList extends Component {
   render() {
     return (
       <div>
-        <h3>Lista de seguidores </h3>
+        {this.props.followers.length > 0 ? <h3>Lista de seguidores </h3> : ''}
         <div className="row justify-content-center text-center">
           {this.renderList()}
         </div>      
